@@ -16,7 +16,11 @@ namespace AkademikADOApp
 
         private void Connected(object sender, EventArgs e)
         {
-
+            try
+            {
+                conn = new SqlConnection(connString);
+                conn.Open();
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
