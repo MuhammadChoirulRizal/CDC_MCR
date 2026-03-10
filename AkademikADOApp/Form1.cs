@@ -24,7 +24,10 @@ namespace AkademikADOApp
                 MessageBox.Show("Koneksi ke database berhasil");
             }
             catch (Exception ex)
-          
+            {
+                MessageBox.Show("Koneksi gagal :" + ex.Message);
+            }
+
         }
 
         private void label1_Click(object sender, EventArgs e)
