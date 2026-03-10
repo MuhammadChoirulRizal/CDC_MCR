@@ -8,6 +8,7 @@ namespace AkademikADOApp
     {
         string connString =
         "Data Source=LAPTOP-5LMNPAS3\\CHOY;Initial Catalog=DBAkademikADO;Integrated Security=True";
+        SqlConnection conn;
         public Form1()
         {
             InitializeComponent();
