@@ -16,5 +16,10 @@ namespace AkademikADOApp
         {
             InitializeComponent();
         }
+
+        private void Connected(object sender, EventArgs e)
+        {
+
+        }
     }
 }
