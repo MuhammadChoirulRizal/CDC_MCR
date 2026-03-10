@@ -20,7 +20,7 @@ namespace AkademikADOApp
             {
                 conn = new SqlConnection(connString);
                 conn.Open();
-            }
+            } 
         }
 
         private void label1_Click(object sender, EventArgs e)
