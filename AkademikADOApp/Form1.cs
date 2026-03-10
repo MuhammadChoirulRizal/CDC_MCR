@@ -34,5 +34,33 @@ namespace AkademikADOApp
         {
 
         }
+
+        private void Disconnected(object sender, EventArgs e)
+        {
+            try
+            {
+                
+                if (conn != null && conn.State == System.Data.ConnectionState.Open)
+                {
+    
+                    conn.Close();
+
+                    
+                    lblStatus.Text = "Status : Database Disconnected";
+
+                    
+                    MessageBox.Show("Koneksi tidak bisa terhubung");
+                }
+                else
+                {
+                    MessageBox.Show("Database memang belum terhubung.");
+                }
+            }
+            catch (Exception ex)
+            {
+                
+                MessageBox.Show("Gagal memutus koneksi: " + ex.Message);
+            }
+        }
     }
 }
